@@ -18,8 +18,9 @@
     under the License.
 -->
 <html>
-    <head>
-        <!--
+
+<head>
+  <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
             https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
         Some notes:
@@ -28,39 +29,41 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet"type="text/css" href="bootstrap/dist/css/bootstrap.css">
-        <link rel="stylesheet"type="text/css" href="css/index.css">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
 
-        <title>Guess what ?</title>
-    </head>
-    <body style="background-color: #eaeaea;">
-        <div class="d-flex justify-content-center align-items-center" style="height: 100vh">
-          <section>
-            <section id="count-container">
-              <div id="count-down" class="display-1"></div>
-            </section>
+  <title>Guess what ?</title>
+</head>
 
-            <section id="game-container" class="d-none">
-              <p class="display-3 text-center" id="word"></p>
-              <p class="small text-center text-muted mb-5">what is this word ?</p>
-              <form>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="answer" placeholder="Enter word">
-                  <small id="emailHelp" class="form-text text-muted text-center">Enter the answer with no gap.</small>
-                </div>
-                <div class="form-group text-center">
-                  <button type="button" class="btn btn-outline-primary btn-lg" id="submit">Check</button>
-                </div>
-              </form>
-            </section>
-          </section>
-        </div>
-        <script type="text/javascript" src="bootstrap/dist/js/bootstrap.js"></script>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-    </body>
+<body style="background-color: #eaeaea;">
+  <div class="d-flex justify-content-center align-items-center" style="height: 100vh">
+    <section>
+      <section id="count-container">
+        <div id="count-down" class="display-1"></div>
+      </section>
+
+      <section id="game-container" class="d-none">
+        <p class="display-3 text-center" id="word"></p>
+        <p class="small text-center text-muted mb-5">what is this word ?</p>
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" id="answer" placeholder="Enter word">
+            <small id="emailHelp" class="form-text text-muted text-center">Enter the answer with no gap.</small>
+          </div>
+          <div class="form-group text-center">
+            <button type="button" class="btn btn-outline-primary btn-lg" id="submit" style="border-radius: 50px;">Check</button>
+          </div>
+        </form>
+      </section>
+    </section>
+  </div>
+  <script type="text/javascript" src="bootstrap/dist/js/bootstrap.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+
 </html>

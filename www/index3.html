@@ -35,41 +35,14 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <script type="text/javascript" charset="utf-8">
-        function onLoad() {
-            document.addEventListener("deviceready", onDeviceReady, true);
-        }
-
-        function exitFromApp() {
-            navigator.app.exitApp();
-        }
-    </script>
 
     <title>Guess what ?</title>
 </head>
 
-<body style="background-color: #eaeaea;" onload="onLoad();">
-    <div class="d-flex justify-content-center align-items-center" style="height: 100vh">
-        <section>
-            <article class="animation-move-up-and-down">
-                <h1 class="dipslay-1 m-0 text-center">GUESS WHAT ?</h1>
-                <p class="lead mb-5 text-muted text-right">the game...</p>
-            </article>
-            <footer class="text-center">
-                <form method="get" action="/index2.html" class="mb-3">
-                    <button type="submit" class="btn btn-outline-primary btn-lg btn-block" style="border-radius: 50px;">Start!</button>
-                </form>
-
-                <form method="get" action="/index3.html" class="mb-3">
-                    <button type="submit" class="btn btn-outline-primary btn-lg btn-block" style="border-radius: 50px;">About Us</button>
-                </form>
-
-                <button class="btn btn-outline-primary btn-lg btn-block" style="border-radius: 50px;" onclick="exitFromApp()">Exit</button>
-            </footer>
-        </section>
-    </div>
+<body style="background-color: #eaeaea;">
     <script type="text/javascript" src="bootstrap/dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>

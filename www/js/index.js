@@ -1,15 +1,15 @@
 // Prototype to shuffle string
 String.prototype.shuffle = function () {
-    var a = this.split(""),
-        n = a.length;
+  var a = this.split(""),
+    n = a.length;
 
-    for(var i = n - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var tmp = a[i];
-        a[i] = a[j];
-        a[j] = tmp;
-    }
-    return a.join("");
+  for (var i = n - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = a[i];
+    a[i] = a[j];
+    a[j] = tmp;
+  }
+  return a.join("");
 }
 
 // Function to start game
@@ -35,16 +35,21 @@ function word() {
 // Parameter for quiz
 var word = word();
 
+// Function route to game
+function Route2Game() {
+  window.location.href = "index2.html";
+}
+
 // Function display data
-function displayDate(){
+function displayDate() {
   var value = document.getElementById("answer").value;
-  if(ans == value){
-      if(confirm("Answer is correct! Want to try again?")){
+  if (ans == value) {
+    if (confirm("Answer is correct! Want to try again?")) {
       window.location.href = "index2.html";
-    }else{
+    } else {
       window.location.href = "index.html";
     }
-  }else{
+  } else {
     alert("Answer is wrong.");
   }
 }
@@ -53,7 +58,7 @@ function displayDate(){
 var time = 4;
 
 // Update the count down every 1 second
-var prestart = setInterval(function() {
+var prestart = setInterval(function () {
   // Get todays date and time
   var now = time - 1;
   time = now;
@@ -72,3 +77,5 @@ var prestart = setInterval(function() {
 document.getElementById("word").innerHTML = word;
 
 document.getElementById("submit").addEventListener("click", displayDate);
+
+document.getElementById("route2Game").addEventListener("click", Route2Game);
