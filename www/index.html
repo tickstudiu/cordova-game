@@ -36,19 +36,14 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <script type="text/javascript" charset="utf-8">
-        function onLoad() {
-            document.addEventListener("deviceready", onDeviceReady, true);
-        }
-
         function exitFromApp() {
             navigator.app.exitApp();
         }
     </script>
-
     <title>Guess what ?</title>
 </head>
 
-<body style="background-color: #eaeaea;" onload="onLoad();">
+<body style="background-color: #eaeaea;">
     <div class="d-flex justify-content-center align-items-center" style="height: 100vh">
         <section>
             <article class="animation-move-up-and-down">
@@ -70,6 +65,7 @@
     </div>
     <script type="text/javascript" src="bootstrap/dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>

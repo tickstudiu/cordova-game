@@ -45,6 +45,35 @@
         }
     </script>
 
+
+<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBUlp98OH1BEI27RzaQ3PNf98C8c2zkyqU",
+    authDomain: "native-firebase-assginment.firebaseapp.com",
+    databaseURL: "https://native-firebase-assginment.firebaseio.com",
+    projectId: "native-firebase-assginment",
+    storageBucket: "native-firebase-assginment.appspot.com",
+    messagingSenderId: "952465302721"
+  };
+  firebase.initializeApp(config);
+
+      var email = 'test1234@email.com';
+      var password = 'test1234';
+
+      firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        if (errorCode == 'auth/weak-password') {
+          alert('too weak');
+        }else{
+          alert(errorMessage);
+        }
+        console.log(error)
+      })
+    </script>
+
     <title>Guess what ?</title>
 </head>
 
@@ -70,6 +99,7 @@
     </div>
     <script type="text/javascript" src="bootstrap/dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>
